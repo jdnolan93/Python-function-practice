@@ -23,55 +23,55 @@ class TestPythonFunctionPractice(unittest.TestCase):
       multiply_result = multiply( 4, 2 )
       self.assertEqual( 8, multiply_result )
 
-  @unittest.skip("delete this line to run the test")
+#   @unittest.skip("delete this line to run the test")
   def test_divide(self):
       divide_result = divide( 10, 2 )
       self.assertEqual( 5, divide_result )
 
-  @unittest.skip("delete this line to run the test")
+#   @unittest.skip("delete this line to run the test")
   def test_length_of_string(self):
       test_string = "A string of length 21"
       string_length = length_of_string( test_string )
       self.assertEqual( 21, string_length )
 
-  @unittest.skip("delete this line to run the test")
+#   @unittest.skip("delete this line to run the test")
   def test_join_string(self):
       string_1 = "Mary had a little lamb, "
       string_2 = "its fleece was white as snow"
       joined_string = join_string( string_1, string_2 )
       self.assertEqual( "Mary had a little lamb, its fleece was white as snow", joined_string )
 
-  @unittest.skip("delete this line to run the test")
+#   @unittest.skip("delete this line to run the test")
   def test_add_string_as_number(self):
       add_result = add_string_as_number( "1", "2" )
       self.assertEqual( 3, add_result )
 
-  @unittest.skip("delete this line to run the test")
+#   @unittest.skip("delete this line to run the test")
   def test_number_to_full_name__month_1(self):
       result = number_to_full_month_name( 1 )
       self.assertEqual( "January", result )
 
-  @unittest.skip("delete this line to run the test")
+#   @unittest.skip("delete this line to run the test")
   def test_number_to_full_name__month_3(self):
       result = number_to_full_month_name( 3 )
       self.assertEqual( "March", result )
 
-  @unittest.skip("delete this line to run the test")
+#   @unittest.skip("delete this line to run the test")
   def test_number_to_full_name__month_9(self):
       result = number_to_full_month_name( 9 )
       self.assertEqual( "September", result )
 
-  @unittest.skip("delete this line to run the test")
+#   @unittest.skip("delete this line to run the test")
   def test_number_to_short_month_name__month_1(self):
       first_month_string = number_to_short_month_name( 1 )
       self.assertEqual( "Jan", first_month_string )
 
-  @unittest.skip("delete this line to run the test")
+#   @unittest.skip("delete this line to run the test")
   def test_number_to_short_month_name__month_4(self):
       fourth_month_string = number_to_short_month_name( 4 )
       self.assertEqual( "Apr", fourth_month_string )
 
-  @unittest.skip("delete this line to run the test")
+#   @unittest.skip("delete this line to run the test")
   def test_number_to_short_month_name__month_10(self):
       tenth_month_string = number_to_short_month_name( 10 )
       self.assertEqual( "Oct", tenth_month_string )
@@ -79,22 +79,27 @@ class TestPythonFunctionPractice(unittest.TestCase):
   #Further
 
   #Given the length of a side of a cube calculate the volume
-  @unittest.skip("delete this line to run the test")
+#   @unittest.skip("delete this line to run the test")
   def test_volume_of_cube(self):
+      cube_with_length_of_10 = volume_of_cube(10)
+      self.assertEqual(1000, cube_with_length_of_10)
     #add test code here
-    pass
+    # pass
 
   #Given a String, return the String reversed
-  @unittest.skip("delete this line to run the test")
+#   @unittest.skip("delete this line to run the test")
   def test_reverse_string(self):
-    #add test code here
-    pass
+        reverse_string = reversed_string("hi")
+        self.assertEqual("ih", reverse_string)
+    
 
   #Given a value in farenheit, convert this into celsius.
-  @unittest.skip("delete this line to run the test")
+#   @unittest.skip("delete this line to run the test")
   def test_fahrenheit_to_celsius(self):
+      ten_fahrenheit = fahrenheit(10)
+      self.assertEqual(-10, ten_fahrenheit)
     #add test code here
-    pass
+    # pass
 
 
 if __name__ == '__main__':
